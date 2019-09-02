@@ -16,7 +16,7 @@ export const store = new Vuex.Store({
     deleteComment(state, payload){
       var comments = state.comments.find(({id}) => id === payload);
       comments.status ='DELETED'
-      state.comments = [...state.comments, comments];
+      state.comments = [...state.comments];
 
     }
   },
